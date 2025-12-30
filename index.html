@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Girly Pop Fitness Workbook — 2026</title>
+  <meta name="description" content="Interactive Girly Pop Fitness workbook for 2026" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <p class="h1" id="hdrTitle">PRs & Personal Growth</p>
+          <p class="sub" id="hdrSub">A Slightly Unhinged 2026 Workbook</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card navcol">
+        <div class="pad">
+          <div class="row" style="justify-content:space-between;align-items:center">
+            <strong>Sections</strong>
+            <span class="badge preview">preview</span>
+          </div>
+          <div class="hr"></div>
+          <a class="btn primary no-print" href="https://www.etsy.com/" target="_blank" rel="noreferrer" style="width:100%;text-align:center">Buy on Etsy</a>
+          <div class="hr"></div>
+          <div class="nav" id="nav"></div>
+          <div class="hr"></div>
+          <div class="row no-print" style="align-items:center;justify-content:space-between">
+            <label class="btn" style="display:inline-flex;align-items:center;gap:8px">
+              Import
+              <input id="importFile" type="file" accept="application/json" style="display:none" />
+            </label>
+            <button class="btn" onclick="window.print()">Print</button>
+          </div>
+          <p class="muted small" style="margin-top:10px">
+            Saves in your browser (localStorage). Use Export on Start here to back it up.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div id="app"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© 2026 — Girly Pop Fitness Workbook</div>
+      <div class="row no-print">
+        <a class="btn primary" href="https://www.etsy.com/" target="_blank" rel="noreferrer">Get the full download</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/app.js"></script>
+  <script>
+    GIRLYPOP_BOOT({"mode": "preview", "sections": [{"id": "home", "title": "Start here", "meta": "Set your title + export", "icon": "\ud83d\udc96", "badge": "free", "badgeClass": "free"}, {"id": "theme", "title": "Theme studio", "meta": "Preview-only (no save)", "icon": "\ud83c\udf80", "badge": "preview", "badgeClass": "preview", "locked": true}, {"id": "goals", "title": "Goals", "meta": "Fitness + life + anti-goals", "icon": "\u2728", "badge": "free", "badgeClass": "free"}, {"id": "calendar", "title": "Calendar", "meta": "Locked in preview", "icon": "\ud83d\udcc5", "badge": "locked", "badgeClass": "lock", "locked": true}, {"id": "habits", "title": "Habits", "meta": "Locked in preview", "icon": "\ud83e\uddc3", "badge": "locked", "badgeClass": "lock", "locked": true}, {"id": "prlog", "title": "PR Log", "meta": "Locked in preview", "icon": "\ud83c\udfcb\ufe0f", "badge": "locked", "badgeClass": "lock", "locked": true}, {"id": "reflect", "title": "Reflection", "meta": "Locked in preview", "icon": "\ud83e\udde0", "badge": "locked", "badgeClass": "lock", "locked": true}, {"id": "about", "title": "About", "meta": "How it works", "icon": "\ud83d\udcfc"}]});
+  </script>
+</body>
+</html>
