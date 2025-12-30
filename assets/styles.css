@@ -22,3 +22,13 @@
   --sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
   --display: 'Space Grotesk', system-ui;
 }
+body{
+  background:
+    radial-gradient(circle at top center,
+      #F29F05 0%,
+      #E24B3B 25%,
+      #C84C7A 45%,
+      #3FA9A6 65%,
+      #F6EFE6 85%
+    );
+}
