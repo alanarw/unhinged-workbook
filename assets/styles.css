@@ -41,10 +41,16 @@ body{
 a{color:inherit}
 .container{max-width:1120px;margin:0 auto;padding:22px}
 .topbar{
-  position:sticky;top:0;z-index:50;
-  backdrop-filter: blur(12px);
-  background: linear-gradient(to bottom, rgba(15,10,22,.82), rgba(15,10,22,.55));
-  border-bottom:1px solid var(--border);
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #E24B3B,
+      #E24B3B 20px,
+      #F29F05 20px,
+      #F29F05 40px,
+      #3FA9A6 40px,
+      #3FA9A6 60px
+    );
 }
 .brand{display:flex;align-items:center;gap:12px}
 .logo{
@@ -244,10 +250,8 @@ textarea{min-height:110px;resize:vertical}
   background: rgba(255,247,255,.04);
 }
 .blurshot{
-  width:100%;
-  display:block;
-  filter: blur(10px) saturate(1.2);
-  transform: scale(1.05);
+  filter: blur(12px) contrast(1.2) saturate(1.4);
+  transform: scale(1.08);
 }
 .bluroverlay{
   position:absolute; inset:0;
