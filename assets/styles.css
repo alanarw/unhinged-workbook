@@ -28,11 +28,15 @@ body{
   margin:0;
   font-family: var(--sans);
   color: var(--text);
+body{
   background:
-    radial-gradient(900px 600px at 15% 0%, rgba(255,79,216,.22), transparent 62%),
-    radial-gradient(800px 550px at 90% 12%, rgba(46,229,157,.18), transparent 65%),
-    radial-gradient(900px 600px at 55% 100%, rgba(255,184,108,.14), transparent 62%),
-    linear-gradient(180deg, #0f0a16 0%, #0b0811 100%);
+    radial-gradient(circle at top center,
+      #F29F05 0%,
+      #E24B3B 25%,
+      #C84C7A 45%,
+      #3FA9A6 65%,
+      #F6EFE6 85%
+    );
 }
 a{color:inherit}
 .container{max-width:1120px;margin:0 auto;padding:22px}
@@ -63,10 +67,10 @@ a{color:inherit}
 .grid{display:grid;grid-template-columns: 295px 1fr;gap:18px}
 @media (max-width: 920px){.grid{grid-template-columns:1fr}}
 .card{
-  background: rgba(32,21,51,.78);
-  border:1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background: var(--card);
+  border: 3px solid var(--text);
+  border-radius: 28px;
+  box-shadow: 8px 8px 0 var(--accent);
 }
 .card .pad{padding:16px}
 .hr{height:1px;background:var(--border);margin:14px 0}
@@ -120,10 +124,19 @@ a{color:inherit}
 }
 .btn:hover{background: rgba(255,247,255,.12)}
 .btn.primary{
-  border-color: rgba(255,79,216,.40);
-  background:
-    radial-gradient(110% 160% at 20% 0%, rgba(255,79,216,.28), transparent 55%),
-    rgba(255,79,216,.14);
+  background: var(--accent);
+  color: var(--text);
+  border: 3px solid var(--text);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  box-shadow: 4px 4px 0 var(--text);
+}
+.btn.primary:hover{
+  transform: translate(-2px,-2px);
+  box-shadow: 6px 6px 0 var(--text);
+}
+
 }
 .btn.secondary{
   border-color: rgba(46,229,157,.40);
