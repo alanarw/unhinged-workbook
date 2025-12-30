@@ -1,4 +1,4 @@
-# Girly Pop Fitness Workbook — 2026 (Preview)
+# An Unhinged Fitness Workbook — 2026 (Preview)
 
 Interactive web workbook (HTML/CSS/JS). No backend. Saves in your browser (localStorage).
 
